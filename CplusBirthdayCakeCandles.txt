@@ -1,0 +1,17 @@
+Rather lovely if statement with counter installed. Taking 4 integers as input
+finding the highest number and any equal companions, and outputting the number of 
+recurrences of this 'Highest Value'.... it looks great and works really well.
+
+int birthdayCakeCandles(vector<int> candles) {
+    int n = candles.size();
+    sort(candles.begin(), (candles.end()));
+    int count = 0;
+    for (int i=0; i<n; i++)
+    {
+    if (candles[n-1]==candles[i]) 
+        {
+            count++;
+        }
+    }   
+    return count; 
+}
